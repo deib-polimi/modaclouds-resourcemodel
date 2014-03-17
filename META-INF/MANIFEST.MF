@@ -10,6 +10,5 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: it.polimi.modaclouds.resourcemodel.cloud,
  it.polimi.modaclouds.resourcemodel.cloud.impl,
  it.polimi.modaclouds.resourcemodel.cloud.util
-Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.emf.ecore;visibility:=reexport
 Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.emf.ecore;bundle-version="2.9.2";visibility:=reexport
