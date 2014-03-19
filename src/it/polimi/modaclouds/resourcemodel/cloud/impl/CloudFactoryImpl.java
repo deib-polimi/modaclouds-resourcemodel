@@ -47,8 +47,7 @@ public class CloudFactoryImpl extends EFactoryImpl implements CloudFactory {
 			if (theCloudFactory != null) {
 				return theCloudFactory;
 			}
-		}
-		catch (Exception exception) {
+		}catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new CloudFactoryImpl();

@@ -1330,7 +1330,7 @@
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_26ZFNAvWEeK0sKop66SKfg" type="3002" source="_25WjZAvWEeK0sKop66SKfg" target="_25ftKAvWEeK0sKop66SKfg">
     <children xmi:type="notation:Node" xmi:id="_26ZFOAvWEeK0sKop66SKfg" type="4011">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_26ZFOQvWEeK0sKop66SKfg" x="7" y="-49"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_26ZFOQvWEeK0sKop66SKfg" x="49" y="-36"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_26ZFOgvWEeK0sKop66SKfg" type="4012">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_26ZFOwvWEeK0sKop66SKfg" x="10" y="10"/>
@@ -1338,7 +1338,7 @@
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_26ZFNQvWEeK0sKop66SKfg" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_26ZFNgvWEeK0sKop66SKfg" fontColor="4210752" fontHeight="10"/>
     <element xmi:type="ecore:EReference" href="Cloud.ecore#//IaaS_Service/composedOf"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_26ZFNwvWEeK0sKop66SKfg" points="[0, 0, 961, 813]$[0, -445, 961, 368]$[-961, -813, 0, 0]$[-961, -813, 0, 0]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_26ZFNwvWEeK0sKop66SKfg" points="[0, 0, 1092, 685]$[-44, -403, 1048, 282]$[-1049, -728, 43, -43]$[-1052, -725, 40, -40]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3FapOwvWEeK0sKop66SKfg" id="(0.49019607843137253,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3FapPAvWEeK0sKop66SKfg" id="(0.8298755186721992,1.0)"/>
   </edges>
