@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: it.polimi.modaclouds.resourcemodel;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.0
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
@@ -11,4 +11,3 @@ Export-Package: it.polimi.modaclouds.resourcemodel.cloud,
  it.polimi.modaclouds.resourcemodel.cloud.impl,
  it.polimi.modaclouds.resourcemodel.cloud.util
 Bundle-ActivationPolicy: lazy
-Require-Bundle: org.eclipse.emf.ecore;bundle-version="2.9.2";visibility:=reexport
