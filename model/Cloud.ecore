@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cloud" nsURI="http://cloud/1.0" nsPrefix="cloud">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cloud" nsURI="http://cloud/1.0" nsPrefix="it.polimi.modaclouds.resourcemodel.cloud">
   <eClassifiers xsi:type="ecore:EClass" name="Provider" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -87,6 +87,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="technology" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="runsOnResourcePool" upperBound="-1"
         eType="#//ResourcePool"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="properties" upperBound="-1"
+        eType="#//CloudPlatformProperty" eOpposite="#//CloudPlatformProperty/platform"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CloudSoftware" eSuperTypes="#//CloudElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="deployedOnCloudPlatform"
@@ -100,6 +102,9 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Backend" eSuperTypes="#//CloudPlatform"/>
   <eClassifiers xsi:type="ecore:EClass" name="Middleware" eSuperTypes="#//CloudPlatform"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Queue" eSuperTypes="#//CloudPlatform"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Cache" eSuperTypes="#//CloudPlatform"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Storage" eSuperTypes="#//CloudPlatform"/>
   <eClassifiers xsi:type="ecore:EClass" name="Frontend" eSuperTypes="#//CloudPlatform"/>
   <eClassifiers xsi:type="ecore:EClass" name="Location" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -187,6 +192,9 @@
     <eLiterals name="middleware" value="1"/>
     <eLiterals name="backend" value="2"/>
     <eLiterals name="database" value="3"/>
+    <eLiterals name="storage" value="4" literal="storage"/>
+    <eLiterals name="queue" value="5" literal="queue"/>
+    <eLiterals name="cache" value="6" literal="cache"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="DatabaseType">
     <eLiterals name="relational" value="1"/>
@@ -251,6 +259,10 @@
     <eLiterals name="per_hour"/>
     <eLiterals name="per_GBmonth" value="1"/>
     <eLiterals name="per_million_I_O" value="2"/>
+    <eLiterals name="per_1year" value="3" literal="per_1year"/>
+    <eLiterals name="per_3year" value="4" literal="per_3year"/>
+    <eLiterals name="per_3year_hour" value="5" literal="per_3year_hour"/>
+    <eLiterals name="per_GBout" value="6" literal="per_GBout"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ScalingMetricType">
     <eLiterals name="CPU_utilization"/>
@@ -282,5 +294,28 @@
   <eClassifiers xsi:type="ecore:EEnum" name="CloudSoftwareType">
     <eLiterals name="REST"/>
     <eLiterals name="SOAP" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CloudPlatformPropertyName">
+    <eLiterals name="ssdOptimized" literal="ssdOptimized"/>
+    <eLiterals name="maxConnections" value="1" literal="maxConnections"/>
+    <eLiterals name="maxRequests" value="2" literal="maxRequests"/>
+    <eLiterals name="multiAzReplicas" value="3" literal="multiAzReplicas"/>
+    <eLiterals name="orderPreserving" value="4" literal="orderPreserving"/>
+    <eLiterals name="replicas" value="5" literal="replicas"/>
+    <eLiterals name="requestSize" value="6" literal="requestSize"/>
+    <eLiterals name="delay" value="7" literal="delay"/>
+    <eLiterals name="storage" value="8" literal="storage"/>
+    <eLiterals name="multiplyingFactor" value="9" literal="multiplyingFactor"/>
+    <eLiterals name="maxRollbackHours" value="10" literal="maxRollbackHours"/>
+    <eLiterals name="maxEntrySize" value="11" literal="maxEntrySize"/>
+    <eLiterals name="replicasChangeable" value="12" literal="replicasChangeable"/>
+    <eLiterals name="replicasPayedSingularly" value="13" literal="replicasPayedSingularly"/>
+    <eLiterals name="dataReplicas" value="14" literal="dataReplicas"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CloudPlatformProperty">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="platform" eType="#//CloudPlatform"
+        eOpposite="#//CloudPlatform/properties"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//CloudPlatformPropertyName"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>
