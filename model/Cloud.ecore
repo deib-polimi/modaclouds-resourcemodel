@@ -263,6 +263,8 @@
     <eLiterals name="per_3year" value="4" literal="per_3year"/>
     <eLiterals name="per_3year_hour" value="5" literal="per_3year_hour"/>
     <eLiterals name="per_GBout" value="6" literal="per_GBout"/>
+    <eLiterals name="per_GBmonth_consumed" value="7" literal="per_GBmonth_consumed"/>
+    <eLiterals name="per_GB_consumed" value="8" literal="per_GB_consumed"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ScalingMetricType">
     <eLiterals name="CPU_utilization"/>
