@@ -191,10 +191,11 @@
     <eLiterals name="frontend"/>
     <eLiterals name="middleware" value="1"/>
     <eLiterals name="backend" value="2"/>
-    <eLiterals name="database" value="3"/>
     <eLiterals name="storage" value="4" literal="storage"/>
     <eLiterals name="queue" value="5" literal="queue"/>
     <eLiterals name="cache" value="6" literal="cache"/>
+    <eLiterals name="relational" value="7" literal="relational"/>
+    <eLiterals name="nosql" value="8" literal="nosql"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CloudStorageType">
     <eLiterals name="blobstorage"/>

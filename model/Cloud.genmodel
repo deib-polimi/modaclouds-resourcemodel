@@ -20,10 +20,11 @@
       <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudPlatformType/frontend"/>
       <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudPlatformType/middleware"/>
       <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudPlatformType/backend"/>
-      <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudPlatformType/database"/>
       <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudPlatformType/storage"/>
       <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudPlatformType/queue"/>
       <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudPlatformType/cache"/>
+      <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudPlatformType/relational"/>
+      <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudPlatformType/nosql"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="Cloud.ecore#//CloudStorageType">
       <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudStorageType/blobstorage"/>
