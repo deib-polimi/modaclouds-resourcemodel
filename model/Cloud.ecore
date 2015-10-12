@@ -168,14 +168,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="storageType" lowerBound="1"
         eType="#//CloudStorageType"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Database" abstract="true" eSuperTypes="#//CloudPlatform">
+  <eClassifiers xsi:type="ecore:EClass" name="RelationalDB" eSuperTypes="#//CloudPlatform">
     <eStructuralFeatures xsi:type="ecore:EReference" name="usesCloudStorage" upperBound="-1"
         eType="#//CloudStorage"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DBType" lowerBound="1"
-        eType="#//DatabaseType"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RelationalDB" eSuperTypes="#//Database"/>
-  <eClassifiers xsi:type="ecore:EClass" name="NoSQL_DB" eSuperTypes="#//Database"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NoSQL_DB" eSuperTypes="#//CloudPlatform">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usesCloudStorage" upperBound="-1"
+        eType="#//CloudStorage"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FilesystemStorage" eSuperTypes="#//CloudStorage"/>
   <eClassifiers xsi:type="ecore:EClass" name="BlobStorage" eSuperTypes="#//CloudStorage"/>
   <eClassifiers xsi:type="ecore:EEnum" name="VirtualHWResourceType">
@@ -195,10 +195,6 @@
     <eLiterals name="storage" value="4" literal="storage"/>
     <eLiterals name="queue" value="5" literal="queue"/>
     <eLiterals name="cache" value="6" literal="cache"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="DatabaseType">
-    <eLiterals name="relational" value="1"/>
-    <eLiterals name="nosql"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CloudStorageType">
     <eLiterals name="blobstorage"/>
