@@ -14,7 +14,8 @@
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="Cloud.ecore#//CloudResourceType">
       <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudResourceType/compute"/>
-      <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudResourceType/cloudstorage"/>
+      <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudResourceType/filesystemstorage"/>
+      <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudResourceType/blobstorage"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="Cloud.ecore#//CloudPlatformType">
       <genEnumLiterals ecoreEnumLiteral="Cloud.ecore#//CloudPlatformType/frontend"/>

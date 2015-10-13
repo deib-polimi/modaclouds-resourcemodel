@@ -185,7 +185,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CloudResourceType">
     <eLiterals name="compute"/>
-    <eLiterals name="cloudstorage" value="1"/>
+    <eLiterals name="filesystemstorage" value="2" literal="filesystemstorage"/>
+    <eLiterals name="blobstorage" value="3" literal="blobstorage"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CloudPlatformType">
     <eLiterals name="frontend"/>
