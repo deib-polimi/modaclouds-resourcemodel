@@ -164,10 +164,7 @@
         eType="#//CloudStorage"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="OS" eType="#//OSType"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CloudStorage" abstract="true" eSuperTypes="#//CloudResource">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="storageType" lowerBound="1"
-        eType="#//CloudStorageType"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CloudStorage" abstract="true" eSuperTypes="#//CloudResource"/>
   <eClassifiers xsi:type="ecore:EClass" name="RelationalDB" eSuperTypes="#//CloudPlatform">
     <eStructuralFeatures xsi:type="ecore:EReference" name="usesCloudStorage" upperBound="-1"
         eType="#//CloudStorage"/>

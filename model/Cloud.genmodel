@@ -220,9 +220,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Cloud.ecore#//Compute/usesCloudStorage"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cloud.ecore#//Compute/OS"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="Cloud.ecore#//CloudStorage">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Cloud.ecore#//CloudStorage/storageType"/>
-    </genClasses>
+    <genClasses image="false" ecoreClass="Cloud.ecore#//CloudStorage"/>
     <genClasses ecoreClass="Cloud.ecore#//RelationalDB">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Cloud.ecore#//RelationalDB/usesCloudStorage"/>
     </genClasses>
